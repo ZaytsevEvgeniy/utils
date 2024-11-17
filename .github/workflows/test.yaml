@@ -1,0 +1,13 @@
+name: check
+
+jobs:
+  pipeline:
+    name: Create Helm chart
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: hello
+        run: |
+            echo "hello"
