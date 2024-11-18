@@ -1,5 +1,8 @@
 name: check
 
+on:
+  workflow_dispatch: # Allows triggering this workflow via the API
+
 jobs:
   pipeline:
     name: Create Helm chart
@@ -11,3 +14,5 @@ jobs:
       - name: hello
         run: |
             echo "hello"
+
+name: check
