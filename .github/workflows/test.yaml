@@ -5,6 +5,9 @@ on:
 
 jobs:
   pipeline:
+    runs-on:
+      - prod-dp1-wf-amd64
+
     name: Create Helm chart
 
     steps:
